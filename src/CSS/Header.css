@@ -1,0 +1,39 @@
+.header{
+        display: flex;
+        float: left;
+        justify-content: center;
+}
+
+.header h1{
+        font-size: 45px;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.img{
+        width: 50px;
+        height: 50px;
+        fill: var(--secondary);
+        animation: rotate 10s ease-out;
+        transition: transform 10s ease-out, fill 300ms linear;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.img:hover{
+        transform: rotate(7460deg);
+        fill: var(--secondary);
+        cursor: pointer;
+}
+
+@keyframes rotate {
+        0% {
+                transform: rotate(0deg);
+        }
+
+        100% {
+                transform: rotate(5860deg);
+        }
+}
+

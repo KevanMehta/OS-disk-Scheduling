@@ -1,0 +1,104 @@
+.radar-chart {
+        display: grid;
+        place-items: center;
+        z-index: 0;
+}
+
+
+.all-summary {
+        width: 100%;
+        height: 100%;
+}
+
+.summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+
+.title-div {
+        text-align: center;
+        width: 100%;
+        margin-bottom:auto;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid var(--visual);
+}
+
+.title {
+        font-size: 30px;
+        padding: 8px;
+
+}
+
+.overview {
+        width: 100%;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: 10px;
+}
+
+.overview label{
+        text-decoration: underline;
+        color: var(--secondary);
+        font-size: 24px;
+        padding: 0px 15px;
+}
+
+
+.overview1 {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        margin-bottom: 160px;
+}
+
+
+.overview p {
+        font-size: 18px;
+        padding: 10px 15px 0px 15px;
+}
+
+
+.overview p::first-letter {
+        margin-left: 8%;
+}
+
+.o{
+        height: 20%;
+}
+
+.advantage,
+.disadvantage {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -150px;
+        padding-bottom: 20px;
+}
+
+.advantage label,
+.disadvantage label {
+        text-align: center;
+
+}
+
+.advantage li,
+.disadvantage li {
+        margin-left: 15%;
+        font-size: 18px;
+        list-style: square;
+        padding-top: 20px;
+}
+
+.no {
+        color: var(--secondary);
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 3px;
+        margin-left: -15px;
+}
+
+

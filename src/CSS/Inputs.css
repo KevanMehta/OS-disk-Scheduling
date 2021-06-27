@@ -1,0 +1,122 @@
+.input{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Lucida Sans Unicode",
+        "Lucida Grande",
+        sans-serif;
+        background: var(--primary);
+}
+
+.process-name, .platter-number{
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+        height: 50%;
+        width: 60%;
+        margin-bottom: 5px;
+        transition: all 300ms linear;
+}
+
+.minmax{
+        margin-top: auto;
+        margin-left: 10px;
+        color: var(--secondary);
+        opacity: 1;
+        transition: all 300ms linear;
+}
+
+.minmax.disabled{
+        opacity: 0;
+}
+
+.platter-number{
+        margin-left: 12%;
+}
+
+.valid-text{
+        margin-left: 5px;
+        margin-top: auto;
+}
+
+label{
+        font-weight: 550;
+}
+
+input{
+        margin-left: 5px;
+        font-size: 20px;
+}
+
+.process-name input:focus{
+        border-bottom: 2px solid var(--other);
+}
+
+.platter-number input:focus{
+        border-bottom: 2px solid var(--other);
+}
+
+.process-name input:invalid:focus {
+        border-bottom: 2px solid red;
+        color: red;
+}
+
+.platter-number input:invalid:focus {
+        border-bottom: 2px solid red;
+        color: red;
+}
+
+
+.process-name label, .platter-number label{
+        font-size: 160%;
+        align-items: center;
+        margin-right: 5px;
+}
+
+.process-name input, .platter-number input{
+        height: 100%;
+        margin-top: 2px;
+        font-size: medium;
+        background-color: var(--primary);
+        color: white;
+        width: 30%;
+        border: none;
+        border-bottom: 1px solid var(--visual);
+}
+
+
+.submit-button{
+        width: 100%;
+        background-color: var(--other) !important;
+        color: var(--another) !important;
+        border-color: var(--visual) !important;
+        transition: all var(--speed) !important;
+}
+
+.submit-button:hover {
+        filter: brightness(70%);
+}
+
+.submit{
+        display: flex;
+        width: 13%;
+        margin-bottom: 4px;
+        margin-right: 5%;
+}
+
+.submit-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0,0,0,0.3) !important;
+        border: 1px solid var(--secondary) !important;
+        transition: all var(--speed) !important;
+}
+
+
+input:disabled {
+        color: var(--secondary);
+        font-size: 22px;
+        border-bottom: none;
+        filter: brightness(100%);
+        background: transparent;
+        transition: all 300ms linear;
+}

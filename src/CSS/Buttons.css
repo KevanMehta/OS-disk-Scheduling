@@ -1,0 +1,216 @@
+.algorithm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+}
+
+.container {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 10px;
+        width: 80%;
+        margin-bottom: auto;
+}
+
+.select-box {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+}
+
+.select-box label {
+        cursor: pointer;
+}
+
+.select-box .options-container {
+        background: var(--primary);
+        margin-top: 10px;
+        width: 100%;
+        transition: all var(--speed);
+        border-radius: 8px;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        border: 2px solid;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+        width: 8px;
+        background: var(--another);
+        border-radius: 0 7px 7px 0;
+        ;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+        background: var(--other);
+        border-radius: 0 5px 5px 0;
+}
+
+
+
+.select-box .option,
+.selected {
+        position: relative;
+        padding: 8px 12px;
+        cursor: pointer;
+}
+
+.select-box .option {
+        font-size: medium;
+}
+
+.select-box .option:hover {
+        background: var(--other);
+        color: var(--another);
+}
+
+
+.select-box .option .radio {
+        display: none;
+}
+
+.select-box .options-container.active {
+        max-height: 212px;
+        opacity: 1;
+        overflow-y: scroll;
+}
+
+.selected {
+        display: flex;
+        align-items: center;
+        background: black;
+        margin-bottom: 0px;
+        order: 0;
+        background-color: var(--primary);
+        border-bottom: 2px solid;
+}
+
+
+.selected .arrow {
+        margin-left: auto;
+        font-size: 30px;
+        transition: all 400ms;
+}
+
+
+.select-box .options-container.active+.selected .arrow {
+        transform: rotate(180deg);
+}
+
+.buttons {
+        height: 50%;
+        overflow: visible;
+        display: flex;
+        margin-top: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+}
+
+.visual-button {
+        width: 80%;
+        background-color: var(--other) !important;
+        color: var(--another) !important;
+        margin: 0px 20px !important;
+        margin-top: 22px !important;
+        text-align: center !important;
+}
+
+#none1 {
+        font-weight: 100;
+        color: var(--secondary);
+}
+
+#none1:hover {
+        color: red;
+}
+
+
+#line-button {
+        background-color: rgb(126, 29, 29) !important;
+        color: var(--visual) !important;
+        transition: all var(--speed) !important;
+        top: 1px;
+}
+
+#radar-button {
+        background-color: rgb(29, 126, 111) !important;
+        color: var(--visual) !important;
+        transition: all var(--speed) !important;
+}
+
+#model-button {
+        background-color: rgb(126, 29, 113) !important;
+        color: var(--visual) !important;
+        transition: all var(--speed) !important;
+}
+
+#all-button {
+        background-color: var(--other) !important;
+        transition: all var(--speed) !important;
+}
+
+#reload-button {
+        color: var(--visual) !important;
+        background-color: var(--another) !important;
+        transition: all var(--speed) !important;
+}
+
+#line-button:hover {
+        filter: brightness(70%);
+}
+
+#radar-button:hover {
+        filter: brightness(70%);
+}
+
+#model-button:hover {
+        filter: brightness(70%);
+}
+
+#all-button:hover {
+        filter: brightness(70%);
+}
+
+#reload-button:hover {
+        filter: brightness(80%);
+}
+
+#all-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary);
+        transition: all var(--speed) !important;
+}
+
+#line-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary);
+        transition: all var(--speed) !important;
+}
+
+#radar-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary);
+        transition: all var(--speed) !important;
+}
+
+#model-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary);
+        transition: all var(--speed) !important;
+}
+
+#reload-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary);
+        transition: all var(--speed) !important;
+}

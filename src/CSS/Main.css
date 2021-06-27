@@ -1,0 +1,141 @@
+.main {
+        display: grid;
+        z-index: 0;
+}
+
+.empty-names {
+        width: 60%;
+        height: 30%;
+        display: grid;
+        place-items: center;
+        margin-top: -2px;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+}
+
+.tracks{
+        display: grid;
+        width: 100%;
+        height:100%;
+
+}
+
+.track , .strack{
+        display: flex;
+        align-items: center;
+        margin: auto 3%;
+        width: 100%;
+        margin-top: -5px;
+}
+
+.strack{
+        padding-left: 2%;
+}
+
+
+.ttrack{
+        display: grid;
+        width: 100%;
+        height:60%;
+        border-bottom: 2px dotted;
+        padding: 6px 0px;
+}
+
+.start-track{
+        margin-top: 10px;
+}
+
+#track1{
+        height: 30%;
+        margin-left: 1%;
+        width: 18%;
+}
+
+#start-name{
+        color: var(--visual);
+}
+
+.name, .number{
+        width: 40%;
+        display: flex;
+        align-items: center;
+}
+
+
+.name{
+        width: 30%;
+}
+
+.number{
+        margin-left: 8%;
+}
+
+
+
+.track-name{
+        margin-top: 2px;
+        margin-left: 5%;
+        font-size: 20px;
+        color: var(--secondary);
+}
+
+.name0{
+        font-size: 28px;
+        margin-left: 0;
+}
+
+.track-number{
+        margin-top: 2px;
+        margin-left: 5%;
+        width: 27.5%;
+        background-color: var(--primary);
+        color: var(--visual);
+        height: 100%;
+        font-size: medium;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 8px 0px;
+        border-bottom: 1px solid var(--visual);
+}
+
+.add-button{
+        margin-left: 3.2% !important;
+}
+
+.track-number:focus {
+        border-bottom: 2px solid var(--other);
+}
+
+.track-number:focus {
+        border-bottom: 2px solid var(--other);
+}
+.track-number:invalid:focus {
+        border-bottom: 2px solid red;
+        color: red;
+}
+
+.track-number:invalid:focus {
+        border-bottom: 2px solid red;
+        color: red;
+}
+
+.add-button:disabled {
+        color: var(--secondary) !important;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid var(--secondary) !important;
+        transition: all var(--speed) !important;
+}
+
+.add-button {
+        background-color: var(--other) !important;
+        color: var(--another) !important;
+        border-color: var(--visual) !important;
+        transition: all var(--speed) !important;
+}
+
+.add-button:hover {
+        filter: brightness(70%);
+}

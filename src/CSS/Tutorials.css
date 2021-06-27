@@ -1,0 +1,170 @@
+.tutorials{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1000px;
+
+}
+
+
+.tutorials h1{
+        font-size: 40px;
+        text-decoration: underline;
+        text-align: center;
+}
+
+.tutorials p{
+        margin: 0 15px;
+        margin-top: 13px;
+        font-size: 18px;
+}
+.start-div{
+        font-size: 30px;
+}
+
+.icon-div{
+        display: flex;
+        justify-content: center;
+        margin: 30px !important;
+}
+
+.icon1{
+        width: 550px;
+        height: 400px;
+        animation: rotate 20s infinite linear;
+}
+.icon2{
+        width:550px;
+        height: 400px;
+}
+
+
+.part1, .part2, .part3{
+        width: 310px;
+        height: 400px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+}
+
+.video{
+        width: 700px;
+        height: 300px;
+}
+
+.video1{
+        width: 200px;
+        height: 300px;
+}
+
+.video3d{
+        margin: 0;
+}
+
+.video3{
+        width: 1050px;
+        height: 330px;
+        margin-top: -25px;
+}
+
+
+@keyframes rotate {
+        0% {
+                transform: rotate(0deg);
+        }
+
+        100% {
+                transform: rotate(1860deg);
+        }
+}
+
+.buttonss{
+        margin-top: auto;
+        display: inline-flex;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 4px;
+}
+
+.buttonwas{
+        width: 100px !important;
+        margin: 10px 25px !important;
+}
+
+.button01{
+        background-color: var(--primary) !important;
+        color: white !important
+}
+
+.button02{
+        margin-left: auto !important;
+        margin-right: -5px !important;
+        background-color: var(--primary) !important;
+        color: white !important
+}
+.button03{
+        background-color: var(--primary) !important;
+        color: white !important
+}
+
+.button01:hover {
+        filter: brightness(90%);
+}
+
+.button02:hover {
+        filter: brightness(90%);
+}
+
+.button03:hover {
+        filter: brightness(90%);
+}
+
+.end{
+        font-size: 25px !important;
+}
+
+
+.tutorial9 h2{
+        padding-top: 50px;
+        margin: 20px;
+        text-decoration: underline;
+}
+
+.tutorial9 p{
+        font-size: 25px;
+}
+
+.namu{
+        display: flex;
+        text-align: center;
+        margin-left: 20px;
+        padding: 5px 0;
+}
+
+.namu p{
+        margin-top: 7px;
+}
+
+.page{
+        margin-left: auto !important;
+}
+
+.avatar{
+        background-color: rgb(7, 93, 139) !important;
+}
+
+.lss{
+        width: 900px;
+        height: 420px;
+}
+
+
+.dmodel{
+        width: 900px;
+        height: 300px;
+}
+
+strong ,b{
+        color: var(--another) !important;
+}

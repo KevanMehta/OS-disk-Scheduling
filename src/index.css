@@ -1,0 +1,22 @@
+body {
+  font-family: helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+:root{
+  --visual: #ffffff;
+  --primary: #03162e;
+  --secondary: #ffcd24;
+  --other: #9dc8e4;
+  --another: #33393d;
+  --padding: 5px;
+  --speed: 500ms;
+}
+
